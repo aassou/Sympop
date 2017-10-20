@@ -1,0 +1,56 @@
+body {
+    padding-top: 5rem;
+    margin: 2em 2em;
+}
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.button-block {
+    margin: 1em 0;
+}
+
+.tbl-5{
+    width:5%;
+}
+
+.tbl-10{
+    width:10%;
+}
+
+.tbl-20{
+    width:20%;
+}
+
+.tbl-30{
+    width:30%;
+}
+
+.tbl-40{
+    width:40%;
+}
+
+.tbl-50{
+    width:50%;
+}
+
+.tbl-60{
+    width:60%;
+}
+
+.tbl-70{
+    width:70%;
+}
+
+.tbl-80{
+    width:80%;
+}
+
+.tbl-90{
+    width:90%;
+}
+
+.tbl-100{
+    width:100%;
+}

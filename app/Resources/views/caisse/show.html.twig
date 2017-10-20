@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Caisse</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Date</th>
+                <td>{% if caisse.date %}{{ caisse.date|date('d.m.Y | H:i') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Type</th>
+                <td><span class="label label-success">{{ caisse.type }}</span></td>
+            </tr>
+            <tr>
+                <th>Amount</th>
+                <td>{{ caisse.amount|number_format(2, '.', ',') }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="button-block">
+        <a href="{{ path('caisse_index') }}" class="btn btn-dark">Back</a>
+        <a href="{{ path('caisse_edit', { 'id': caisse.id }) }}" class="btn btn-warning">Edit</a>
+    </div>
+    {{ form_start(delete_form) }}
+        <input type="submit" value="Delete" class="btn btn-danger">
+    {{ form_end(delete_form) }}
+{% endblock %}

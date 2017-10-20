@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Caisses list</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="tbl-20">Type</th>
+                <th class="tbl-30">Amount</th>
+                <th class="tbl-40">Date</th>
+                <th class="tbl-10">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for caisse in caisses %}
+            <tr>
+                <td>{{ caisse.type }}</td>
+                <td>{{ caisse.amount|number_format(2, '.', ',') }}&nbsp;&euro;</td>
+                <td>{% if caisse.date %}{{ caisse.date|date('d.m.Y') }}{% endif %}</td>
+                <td>
+                    <a href="{{ path('caisse_show', { 'id': caisse.id }) }}" class="btn btn-success" role="button">show</a>
+                    <a href="{{ path('caisse_edit', { 'id': caisse.id }) }}" class="btn btn-warning" role="button">edit</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="tbl-20">Total</th>
+                <th class="tbl-80">{{ total|number_format(2, '.', ',') }}&nbsp;&euro;</th>
+            </tr>
+        </thead>
+    </table>
+    <a href="{{ path('caisse_new') }}" class="btn btn-primary">New Operation</a>
+{% endblock %}

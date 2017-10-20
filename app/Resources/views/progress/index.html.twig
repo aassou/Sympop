@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Progresses list</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="tbl-10">Name</th>
+                <th class="tbl-20">Tags</th>
+                <th class="tbl-40">Description</th>
+                <th class="tbl-20">Date</th>
+                <th class="tbl-10">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for progress in progresses %}
+            <tr>
+                <td>{{ progress.name }}</td>
+                <td>{{ progress.tags }}</td>
+                <td>{{ progress.description }}</td>
+                <td>{% if progress.date %}{{ progress.date|date('d.m.Y') }}{% endif %}</td>
+                <td>
+                    <a href="{{ path('progress_show', { 'id': progress.id }) }}" class="btn btn-success" role="button">show</a>
+                    <a href="{{ path('progress_edit', { 'id': progress.id }) }}" class="btn btn-warning">edit</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ path('progress_new') }}" class="btn btn-primary">New Progress Point</a>
+{% endblock %}

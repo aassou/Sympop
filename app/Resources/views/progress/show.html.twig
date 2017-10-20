@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Progress</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <td>{{ progress.name }}</td>
+            </tr>
+            <tr>
+                <th>Tags</th>
+                <td>{{ progress.tags }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ progress.description }}</td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td>{% if progress.date %}{{ progress.date|date('d.m.Y') }}{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="button-block">
+        <a href="{{ path('progress_index') }}" class="btn btn-dark" role="button">Back</a>
+        <a href="{{ path('progress_edit', { 'id': progress.id }) }}" class="btn btn-warning" role="button">Edit</a>
+    </div>
+    {{ form_start(delete_form) }}
+        <input type="submit" value="Delete" class="btn btn-danger">
+    {{ form_end(delete_form) }}
+{% endblock %}
