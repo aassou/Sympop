@@ -65,11 +65,8 @@ class ProgressController extends Controller
      */
     public function showAction(Progress $progress)
     {
-        $deleteForm = $this->createDeleteForm($progress);
-
         return $this->render('progress/show.html.twig', array(
-            'progress' => $progress,
-            'delete_form' => $deleteForm->createView(),
+            'progress' => $progress
         ));
     }
 
@@ -81,7 +78,6 @@ class ProgressController extends Controller
      */
     public function editAction(Request $request, Progress $progress)
     {
-        $deleteForm = $this->createDeleteForm($progress);
         $editForm = $this->createForm('AppBundle\Form\ProgressType', $progress);
         $editForm->handleRequest($request);
 
@@ -93,7 +89,22 @@ class ProgressController extends Controller
 
         return $this->render('progress/edit.html.twig', array(
             'progress' => $progress,
-            'edit_form' => $editForm->createView(),
+            'edit_form' => $editForm->createView()
+        ));
+    }
+
+    /**
+     * Finds and displays a progress entity.
+     *
+     * @Route("/{id}/delete", name="progress_show_delete_form")
+     * @Method("GET")
+     */
+    public function showDeleteAction(Progress $progress)
+    {
+        $deleteForm = $this->createDeleteForm($progress);
+
+        return $this->render('progress/delete.html.twig', array(
+            'progress' => $progress,
             'delete_form' => $deleteForm->createView(),
         ));
     }
