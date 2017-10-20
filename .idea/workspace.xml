@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be5b58b2-4283-4082-9131-3a725001d5da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/caisse/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/caisse/edit.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/caisse/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/caisse/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/caisse/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/caisse/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/progress/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/progress/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/progress/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/progress/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/progress/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/progress/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/CaisseController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/CaisseController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/ProgressController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ProgressController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/progress/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
@@ -61,6 +53,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/caisse/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -93,7 +95,6 @@
         <option value="$PROJECT_DIR$/web/css/base.css" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/CaisseRepository.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/caisse/edit.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/caisse/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/caisse/delete.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/caisse/show.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/CaisseController.php" />
@@ -102,6 +103,7 @@
         <option value="$PROJECT_DIR$/app/Resources/views/progress/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/ProgressController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/progress/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/caisse/index.html.twig" />
       </list>
     </option>
   </component>
@@ -265,12 +267,12 @@
       <workItem from="1508147044049" duration="745000" />
       <workItem from="1508148499581" duration="3652000" />
       <workItem from="1508420548727" duration="6551000" />
-      <workItem from="1508482360245" duration="16033000" />
+      <workItem from="1508482360245" duration="16576000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29772000" />
+    <option name="totallyTimeSpent" value="30315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -652,14 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/caisse/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="136" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/progress/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
@@ -688,6 +682,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/caisse/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
           <folding />
         </state>
       </provider>
