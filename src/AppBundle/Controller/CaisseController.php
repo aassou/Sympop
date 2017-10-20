@@ -72,11 +72,8 @@ class CaisseController extends Controller
      */
     public function showAction(Caisse $caisse)
     {
-        $deleteForm = $this->createDeleteForm($caisse);
-
         return $this->render('caisse/show.html.twig', array(
-            'caisse' => $caisse,
-            'delete_form' => $deleteForm->createView(),
+            'caisse' => $caisse
         ));
     }
 
@@ -88,7 +85,6 @@ class CaisseController extends Controller
      */
     public function editAction(Request $request, Caisse $caisse)
     {
-        $deleteForm = $this->createDeleteForm($caisse);
         $editForm = $this->createForm('AppBundle\Form\CaisseType', $caisse);
         $editForm->handleRequest($request);
 
@@ -100,7 +96,22 @@ class CaisseController extends Controller
 
         return $this->render('caisse/edit.html.twig', array(
             'caisse' => $caisse,
-            'edit_form' => $editForm->createView(),
+            'edit_form' => $editForm->createView()
+        ));
+    }
+
+    /**
+     * Finds and displays a caisse entity to delete.
+     *
+     * @Route("/{id}/delete", name="caisse_show_delete_form")
+     * @Method("GET")
+     */
+    public function showDeleteAction(Caisse $caisse)
+    {
+        $deleteForm = $this->createDeleteForm($caisse);
+
+        return $this->render('caisse/delete.html.twig', array(
+            'caisse' => $caisse,
             'delete_form' => $deleteForm->createView(),
         ));
     }

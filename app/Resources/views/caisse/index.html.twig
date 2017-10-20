@@ -6,10 +6,10 @@
     <table class="table">
         <thead>
             <tr>
-                <th class="tbl-20">Type</th>
+                <th class="tbl-10">Type</th>
                 <th class="tbl-30">Amount</th>
-                <th class="tbl-40">Date</th>
-                <th class="tbl-10">Actions</th>
+                <th class="tbl-30">Date</th>
+                <th class="tbl-30">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -21,6 +21,7 @@
                 <td>
                     <a href="{{ path('caisse_show', { 'id': caisse.id }) }}" class="btn btn-success" role="button">show</a>
                     <a href="{{ path('caisse_edit', { 'id': caisse.id }) }}" class="btn btn-warning" role="button">edit</a>
+                    <a href="{{ path('caisse_show_delete_form', { 'id': caisse.id }) }}" class="btn btn-danger" role="button">delete</a>
                 </td>
             </tr>
         {% endfor %}
